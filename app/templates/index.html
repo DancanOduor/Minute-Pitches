@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+{% import 'macros.html' as macro %}
+<!-- Styles block -->
+
+{%block styles%}
+    {{ super() }}
+    <link href="" rel="stylesheet">
+    <link href="" rel="stylesheet">
+    <link rel="stylesheet" href="{{url_for('static',filename='css/index.css')}}">
+{%endblock%}
+<!-- Content block -->
+{%block content%}
+<div class="jumbotron text-center" style="background-color: rgb(0, 0, 0); color: rgb(38, 11, 194); padding: 55px 25px; font-family: 'Monoton', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">
+    <h1>Welcome To Your One Minute Pitch</h1>
+</div>
+<div class="container" style="padding-bottom: 20px;">
+    <a href="{{url_for('main.new_pitch')}}" class="btn btn-success">Create pitch</a>
+</div>
+
+<div class="container" style= "font-family: 'Cormorant Upright', serif;">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="well well-lg">
+                <h3>Interview Pitches</h3>
+                <p> you are welcome to ace an interview in just a few words.</p>
+                <a href="{{url_for('main.interview_pitches')}}" class="btn btn-primary -center">View</a>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="well well-lg">
+                <h3>Product Pitches</h3>
+                <p> Do you Want to talk about your products.</p>
+                <a href="{{url_for('main.product_pitches')}}" class="btn btn-primary -center">View</a>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="well well-lg">
+                <h3>Promotion Pitches</h3>
+                <p>Want to promote anything, step right up and begin.</p>
+                <a href="{{url_for('main.promotion_pitches')}}" class="btn btn-primary -center">View</a>
+            </div>
+        </div>
+    </div>
+</div>
+{%endblock%}
