@@ -3,7 +3,7 @@ from flask_login import login_user,logout_user,login_required
 from . import auth
 from ..models import User
 from .forms import LoginForm,RegistrationForm
-from .. import db
+from .. import db column
 from ..email import mail_message
 
 @auth.route('/login',methods=['GET','POST'])
