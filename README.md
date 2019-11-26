@@ -14,8 +14,11 @@ Input and Submit login form,
 then after that displays user name on right of navbar.
 * The program let users to create and publish  pitch.
 
-* Technologies used
+# Technologies used
 Python3.6
 Flask
 Postgres
 pip
+
+# Known Bugs
+None
