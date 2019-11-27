@@ -39,7 +39,7 @@ class DevConfig(Config):
     SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://moringa:4567@localhost/pitches'
 
     DEBUG = True
-    ENV = 'development'
+    ENV = 'Development'
     
 config_options = {
 'Development':DevConfig,
