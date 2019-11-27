@@ -42,7 +42,7 @@ class DevConfig(Config):
     ENV = 'development'
     
 config_options = {
-'development':DevConfig,
-'production':ProdConfig,
+'Development':DevConfig,
+'Production':ProdConfig,
 'test':TestConfig
 }
