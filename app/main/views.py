@@ -5,6 +5,9 @@ from .. import db, photos
 from .forms import UpdateProfile, PitchForm, CommentForm
 from flask_login import login_required, current_user
 import datetime
+from .forms import LonginForm
+from .import auth
+from ..email import mail_message
 
 # Views
 @main.route('/')
