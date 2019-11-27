@@ -14,7 +14,7 @@ def signup():
         user =  User(email = form.email.data, username = form.username.data,password = form.password.data)
         user.save_user()
         try:
-            msg = Message('Hello...Welcome to pitches.We are glad you joined us',sender=('Dancansterio@gmail.com'))
+            msg = Message('Hello...Welcome to pitches.We are glad you joined us',sender=('Dancansteric@gmail.com'))
             msg.add_recipient(user.email)
             mail.send(msg)
         except Exception as e:
